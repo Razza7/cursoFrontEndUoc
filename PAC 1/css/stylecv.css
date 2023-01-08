@@ -1,0 +1,166 @@
+html {
+    scroll-behavior: smooth; 
+  }
+  body {
+    margin: 0; 
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(225, 224, 214, 0.601);
+    
+
+  }
+
+  table {
+    margin: auto;
+    
+  }
+
+  table,
+  th,
+  td {
+      border: none;
+      text-align: center;
+      border-spacing: 3px;
+      border-collapse: separate;
+  }
+
+  th, 
+  td {
+    background-color: rgb(222, 228, 208);
+  }
+
+  .header {
+    display: flex; 
+    justify-content: right;
+    background-color: #222;
+    
+  }
+
+  .header > ul, a{
+
+    list-style: none;
+    display: flex;
+    padding-right: 40px;
+    
+  }
+  
+  .index > ul,a {
+    display: flex;
+    list-style:none;
+    justify-content: center;
+    gap: 1rem;
+    color: rgb(174, 117, 74);
+    padding: 10px;
+    
+  }
+
+  
+  .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+
+
+
+  h1 {
+    color: rgb(163, 132, 45);
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    
+  }
+
+
+  h2 {
+    text-align: center; 
+    font-size: 2rem; 
+    margin-bottom: auto;
+    color: rgb(119, 67, 28);
+  }
+  
+
+ 
+  section > * {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80vw; 
+    padding: 2rem ;
+     
+  }
+  
+
+  .imagen {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(79, 77, 77);
+    
+  }
+
+  .top {
+    position:sticky;
+    background-color:rgb(57, 57, 56);
+    opacity: 0.8;
+    bottom: 20px; 
+    padding: 5px;
+    width: auto;
+
+  }
+  .footer{
+
+        bottom: 0px;
+        width: 100%;
+        height: 20px;
+     
+        
+        
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 4rem;
+    background-color: rgb(57, 55, 55);
+
+  }
+  .cards {
+    display: flex;
+    justify-content:center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    margin: 10rem auto;
+    width:80vw;
+    align-items: center;
+}
+
+.card{
+
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    
+    flex-grow: 1; /* capacidad de un elemento a crecer mas de su medida base*/
+    flex-shrink: 0; /* capacidad de reducirse apretarse segun la pantalla se reduzca */
+    flex-basis: 15rem; /* la medida de base que tiene el elemento */
+    
+    border: 1px solid violet;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 15px 15px rgb(144, 142, 142);
+
+}
+
+.card >p {
+    padding: 1rem;
+}
+
+.card > button{
+    margin: 1rem;
+    padding: .5rem 1rem;
+}
+
