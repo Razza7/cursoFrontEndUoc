@@ -1,3 +1,12 @@
+/* Una recomendación para que sea más facil maquetar, es resetar los estilos 
+por defecto del navegador
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; <------ https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+} */
+
 html {
     scroll-behavior: smooth; 
   }
@@ -164,3 +173,6 @@ html {
     padding: .5rem 1rem;
 }
 
+.ed_centros {
+  display: block;
+}
