@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+
+<body class="claro" id="body">
+    <h1 class="title">Pokedex</h1>
+    
+    <div id= "tema">
+      <input type="number" id="celda" name="celda" min="1" max="10" value="1"><label for="celdaPokemon"></label>
+
+      <input type="button" id="ver" value="Ver Pokemons" onclick="javascript:fetchPokemons(user,arrayPoks)">
+
+      <form name="tema" method="post" action="">
+      <input type="radio" name="modo" id="radioPordefecto" value="defecto"><label for="radioPordefecto">Default</label>
+      
+      <input type="radio" name="modo" id="radioOscuro" value="oscuro" ><label for="radioOscuro">Dark</label>
+      
+      <input type="radio" name="modo" id="radioClaro" value="claro" checked="true"><label for="radioClaro">Light</label>
+      </form>
+    </div>
+    <div class="pokemon-container">
+
+    </div>
+
+   
+
+    <div id="spinner" class="spinner-border text-light" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    
+</body>
+<script src="main.js"></script>
+</html>
