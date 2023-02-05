@@ -22,7 +22,17 @@ window.onload=function() {
 
 ///////ARRAY NUMERO DE POKEMONS////////
 
-
+function fetchPokemons(user,arrayPoks) {
+  spinner.style.display = "block";
+  for (let i = user; i <= 10; i++) {
+    
+    if(user){ 
+      arrayPoks.lenght=user;
+      fetchPokemon(i);
+    }
+    
+  }
+}
 
 ////////// FETCH//////////
 const pokemonContainer = document.querySelector(".pokemon-container");
@@ -44,17 +54,7 @@ function fetchPokemon(id) {
     });
 }
 
-function fetchPokemons(user,arrayPoks) {
-  spinner.style.display = "block";
-  for (let i = user; i <= 10; i++) {
-    
-    if(user){ 
-      arrayPoks.lenght=user;
-      fetchPokemon(i);
-    }
-    
-  }
-}
+
 
 
 
